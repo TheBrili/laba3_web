@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_form">
+        <!-- Вид вклада -->
+          <form>
+            <div class="container_select">
+              <select id="typeOfContribution" onchange="changeTypeOfContribution()">
+                <option selected disabled hidden>Вид вклада</option>
+                <option>Пополняемый</option>
+                <option>Срочный</option>
+              </select>
+              <!-- срок вклада -->
+                <select id="depositTerm">
+                  <option selected disabled hidden>Срок вклада</option>
+                </select>
+            </div>
+            <p class="amount"><br>
+              <input id="sumAmount" type="number" size="27" placeholder="Сумма, руб.">
+            </p>
+          </form>
+          <button class="button_calculate" onclick="creatingDeposit()">Рассчитать</button>
+      </div>
+</body>
+</html>
